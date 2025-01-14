@@ -35,8 +35,8 @@ There is no "best" virtualization software. There are simply different options -
 In this setup I will be using Oracle VM VirtualBox because it is compatible with both Windows and Linux, but you can use any you want. The steps will nearly be identical to other virtualization software. 
 
  
-Downloading and Installing VirtualBox
-Download Oracle VM VirtualBox by clicking here. Once the download completes, I launched the installation.
+<b>Downloading and Installing VirtualBox</b>
+<i>Download Oracle VM VirtualBox</i> by clicking [here](https://www.oracle.com/uk/virtualization/technologies/vm/downloads/virtualbox-downloads.html). Once the download completes, I launched the installation.
 
 <img src="Folder/VirtualBox-Install.jpg"> 
 
