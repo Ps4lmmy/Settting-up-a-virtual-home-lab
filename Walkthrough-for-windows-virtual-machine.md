@@ -36,11 +36,11 @@ In this setup I will be using Oracle VM VirtualBox because it is compatible with
 
  
 <b>Downloading and Installing VirtualBox</b>
-<i>Download Oracle VM VirtualBox</i> by clicking [here](https://www.oracle.com/uk/virtualization/technologies/vm/downloads/virtualbox-downloads.html). Once the download completes, I launched the installation.
+<i>Download Oracle VM VirtualBox</i> by clicking [here](https://www.oracle.com/uk/virtualization/technologies/vm/downloads/virtualbox-downloads.html). Once the download completes, launch the installation.
 
 <img src="Folder/VirtualBox-Install.jpg"> 
 
-I Proceeded through the installation using all of the default options. Any prompts that are a yes/no you need to select "yes".
+Proceed through the installation using all of the default options. Any prompts that are a yes/no you need to select "yes".
 
 <img src="Folder/VirtualBox-Complete.jpg">
  
@@ -57,7 +57,7 @@ This will launch the new VM window. Go ahead and click the Expert Mode button. D
 
 <img src="Folder/New-VM.jpg">
  
-I am going to specify a name of "MyVM" and 2048 MB (2gb) of RAM then I will click Create.
+I am going to specify a name of "MyVM" and 2048 MB (2gb) of RAM then i will click Create.
 
 <img src="Folder/New-Vm2.jpg">
  
@@ -65,13 +65,13 @@ This will open another window for creating the Virtual Hard Disk. The default op
 
 <img src="Folder/New-VM-HDD.jpg">
  
-Since this HDD is going to be dynamically allocated (option on the middle-right of the screenshot below), the HDD file will only be as large as the amount of data stored on it - and a maximum of 60GB
+Since this HDD is going to be dynamically allocated (option on the middle-right of the screenshot below), the HDD file will only be as large as the amount of data stored on it - and a maximum of 60GB.
 Now you will see MyVM listed on the VirtualBox dashboard. Before we start the VM we can modify the settings of the VM if we want. Generally you might want to assign more processors, change the networking adapters and mount an ISO.
 
 <img src="Folder/VM-Settings.jpg">
  
 Increasing the processor CPUs can greatly improve the performance of your VM, so if at all possible increase the number of CPUs to 2.
-Pro tip: Storing the VM's hard disk file on an SSD will also significantly increase the VMs performance.
+<b>Pro tip:</b> Storing the VM's hard disk file on an SSD will also significantly increase the VMs performance.
 
 <img src="Folder/CPUs.jpg">
  
