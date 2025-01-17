@@ -72,8 +72,7 @@ Now you will see MyVM listed on the VirtualBox dashboard. Before we start the VM
 
 <img src="Folder/VM-Settings.jpg">
  
-Increasing the processor CPUs can greatly improve the performance of your VM, so if at all possible increase the number of CPUs to 2.
-<b>Pro tip:</b> Storing the VM's hard disk file on an SSD will also significantly increase the VMs performance.
+Increasing the processor CPUs can greatly improve the performance of your VM, so if at all possible increase the number of CPUs to 2.<br><b>Pro tip:</b> Storing the VM's hard disk file on an SSD will also significantly increase the VMs performance.
 
 <img src="Folder/CPUs.jpg">
  
@@ -88,38 +87,42 @@ Here is an overview of the different network types you could create:
 
 <img src="Folder/VirtualBox-VM-Adapter-Types.jpg">
 
-<b>NAT</b>
-This network type allows your VMs to use the internet connectivity of the host computer. You will have no connectivity to other VMs or the host computer. Use this type if your lab will only have one VM.
- 
+<b>NAT</b><br>This network type allows your VMs to use the internet connectivity of the host computer. You will have no connectivity to other VMs or the host computer. Use this type if your lab will only have one VM.
+
 Using NAT is as simple as right-clicking your VM and selecting Settings then navigating to the Network tab (image above)
 
-NAT Network
-This network is the same as NAT, but it allows your VMs to communicate to other VMs that are attached to the same NAT network. Use this when your labs use multiple VMs and need internet connectivity.
+<b>NAT Network</b><br>This network is the same as NAT, but it allows your VMs to communicate to other VMs that are attached to the same NAT network. Use this when your labs use multiple VMs and need internet connectivity.
  
 You can create a NAT Network by clicking on File > Preferences. Select the Network tab and then click the plus button to create a new NAT Network.
 
 <img src="Folder/NAT-Network.jpg">
 
-<h4>Bridged Adapter</h4>
-Using this network type will cause your router to treat your VM as a physical computer. This means your VM will be connected to the same network as your host computer. Use this lab when you need to access your VMs from your host network.
+<h4>Bridged Adapter</h4>Using this network type will cause your router to treat your VM as a physical computer. This means your VM will be connected to the same network as your host computer. Use this lab when you need to access your VMs from your host network.
+
 Using a bridged adapter is as simple as right-clicking your VM and selecting Settings then navigating to the Network tab (image above)
-<h4>Internal Network</h4>
-This network provides your VMs with connectivity but no external access. Use this when you want to create an isolated IT lab.
+
+<h4>Internal Network</h4>This network provides your VMs with connectivity but no external access. Use this when you want to create an isolated IT lab.
 Using an Internal Network is as simple as right-clicking your VM and selecting Settings then navigating to the Network tab (image above)
-<h4>Host-only Adapter</h4>
-This is essentially the same as an internal network, except that your host computer will have a direct IP connection to the VM. Meaning you can RDP, SSH or ping the VMs from the host computer. Use this network type when you will need direct access to the VMs from your host computer. It is commonly used for test web servers (think copying files from the host computer to the VM web server, or directly editing the code on the web server VM from your host computer.
+
+<h4>Host-only Adapter</h4>This is essentially the same as an internal network, except that your host computer will have a direct IP connection to the VM. Meaning you can RDP, SSH or ping the VMs from the host computer. Use this network type when you will need direct access to the VMs from your host computer. It is commonly used for test web servers (think copying files from the host computer to the VM web server, or directly editing the code on the web server VM from your host computer.
  
 You can create a host-only network by select File > Host Network Manager
+
  <img src="Folder/Host-Only-Network-Adapters.jpg">
-Generic Driver
-Oracles documentation for the generic driver states:
+ 
+<h4>Generic Driver</h4>Oracles documentation for the generic driver states:
 The generic driver attachment is special and cannot be considered as an alternative to other attachment types.
-I am going to use a NAT Network since this will allow me to connect my VMs to each other and the internet. 
+
+I am using a NAT Network since this will allow me to connect my VMs to each other and the internet.
+
 First I will select File > Preferences, then navigate to the Network tab. Next I will click the plus button (circled in the image above).
+
 This will create a new NAT Network. If I want to modify the subnet, disable DHCP or support IPv6 I can do this by double-clicking the NAT Network.
+
  <img src="Folder/NAT-Network-2.jpg">
-I am going to leave all of these options at default... so I am done creating the Virtual Network!
-Configure the Networking tab for your chosen network type. Again, the easiest solution is to create and use a NAT Network.
+
+I am going to leave all of these options at default... so I am done creating the Virtual Network!<br>Configure the Networking tab for your chosen network type. Again, the easiest solution is to create and use a NAT Network.
+
 <img src="Folder/VM-Network.jpg">
  
 <h2>Downloading Your operating systems ISO(s)</h2>
@@ -134,14 +137,17 @@ I will still provide links to the most common operating systems that people want
 - [Centos 7](https://www.centos.org/download/)
 - [Ubuntu](https://ubuntu.com/download/desktop)
 - [Kali Linux](https://www.kali.org/get-kali/#kali-platforms)
+
 <h2>Installing an OS on Your Lab VMs</h2>
 Once you have downloaded your ISO file, it's time to mount it to your VM in VirtualBox. Mounting a VM is essentially like virtually inserting a disc into a DVD drive of a computer.
  
 Right click on your VM and select settings then open the Storage tab. From there click the Empty disc icon, then again the disc icon under Attributes on the right hand side of the window. Click the Choose Virtual Optical Disk File... and browse to and open your desired ISO.
+
  <img src="Folder/Attach-an-ISO.jpg">
+ 
 Click OK and now when we launch the VM you will be able to begin your OS installation.
 I mounted a Windows Server 2016 ISO so when I launch the VM I will see the installation screen for this OS.
- <img src="Folder/Windows-Server-2016-Install-2.jpg">
-Now you can run through your OS installation and complete your lab setup.
-Wrapping it Up...
 
+ <img src="Folder/Windows-Server-2016-Install-2.jpg">
+ 
+Now you can run through your OS installation and complete your lab setup.
